@@ -16,7 +16,7 @@
         <FriendItem
           v-for="friend in getFriends"
           :key="friend.id"
-          :to="`/frineds/${friend.id}`"
+          :to="`/friends/${friend.id}`"
           :nickname="friend.nickname"
           :date="friend.date"
           :img="friend.img"

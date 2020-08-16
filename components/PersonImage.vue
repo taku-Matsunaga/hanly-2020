@@ -1,7 +1,7 @@
 <template>
   <div class="personImage">
     <img
-      id="pick-avatar"
+      :id="editable ? 'pick-avatar' : ''"
       :src="
         src ||
         'https://res.cloudinary.com/kiyopikko/image/upload/v1561617116/empty-user-image_o4ll8m.png'
@@ -34,6 +34,9 @@ export default {
     src: {
       type: String,
       default: '',
+    },
+    editable: {
+      type: Boolean,
     },
   },
   data() {

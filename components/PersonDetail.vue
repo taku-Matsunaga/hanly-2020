@@ -1,6 +1,6 @@
 <template>
   <div class="person">
-    <PersonImage :src="faceImageUrl" />
+    <PersonImage :src="faceImageUrl" :editable="editable" />
     <h2 class="nickname">{{ nickname }}</h2>
     <div v-if="latitude && latitude" class="mapWrap">
       <PersonMap :latitude="latitude" :longitude="longitude" />
@@ -38,6 +38,9 @@ export default {
     faceImageUrl: {
       type: String,
       default: '',
+    },
+    editable: {
+      type: Boolean,
     },
   },
 }

@@ -6,6 +6,7 @@
       :longitude="longitude"
       :datetime="getDateTime"
       :face-image-url="face_image_url"
+      editable
     />
     <BaseButton is-txt @click="logout">ログアウト</BaseButton>
   </div>
